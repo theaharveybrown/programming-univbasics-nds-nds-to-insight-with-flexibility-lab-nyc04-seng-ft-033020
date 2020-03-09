@@ -71,7 +71,9 @@ def movies_with_directors_set(source)
   movies = []
   i = 0
   while i < source.length do 
-    moves << source[i]
+    moves << source[i][:movies]
+    i += 1
+  end 
   # RETURN:
   #
   # Array of Arrays containing all of a director's movies. Each movie will need
