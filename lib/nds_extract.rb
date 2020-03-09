@@ -67,16 +67,16 @@ def movies_with_directors_set(source)
   # :name and :movies
   #
   
-  movies = []
+  directors_movies = []
   i = 0
   while i < source.length do 
     name = source[i][:name]
-    movie = source[i]
+    movies = source[i][:movies]
     movie_index = 0
     while movie_index < source[i][:movies].length do
       movie = source[i][:movies][movie_index]
       movie[:director_name] = name
-      movies << movie
+      directors_movies << movie
       movie_index += 1
     end
     i += 1
