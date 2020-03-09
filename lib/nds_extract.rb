@@ -78,6 +78,7 @@ def movies_with_directors_set(source)
       movie[:director_name] = name
       movies << movie
       movie_index += 1
+    end
     i += 1
   end 
   # RETURN:
