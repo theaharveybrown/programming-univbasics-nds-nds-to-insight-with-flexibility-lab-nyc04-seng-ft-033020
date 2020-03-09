@@ -43,6 +43,17 @@ def movies_with_director_key(name, movies_collection)
   # * name: A director's name
   # * movies_collection: An Array of Hashes where each Hash represents a movie
   #
+  i = 0
+  result = []
+  
+  while i < movies_collection.length do
+    movie = {}
+    movie_hash = movie_with_director_name(name, movies_collection[i])
+    movie[name] = movie_hash
+    result << movie
+    i += 1
+  end
+  
   # RETURN:
   #
   # Array of Hashes where each Hash represents a movie; however, they should all have a
