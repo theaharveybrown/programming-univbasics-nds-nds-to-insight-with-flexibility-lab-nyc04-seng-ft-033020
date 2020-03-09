@@ -38,10 +38,8 @@ def movies_with_director_key(name, movies_collection)
   result = []
   
   while i < movies_collection.length do
-    movie = {}
-    movie_hash = movie_with_director_name(name, movies_collection[i])
-    movie[name] = movie_hash
-    result << movie
+    result << movie_with_director_name(name, movies_collection[i])
+    
     i += 1
   end
 end
