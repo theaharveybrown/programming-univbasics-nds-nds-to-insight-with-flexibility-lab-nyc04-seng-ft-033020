@@ -71,7 +71,7 @@ def movies_with_directors_set(source)
   movies = []
   i = 0
   while i < source.length do 
-    moves << source[i][:movies]
+    movies << source[i]
     i += 1
   end 
   # RETURN:
